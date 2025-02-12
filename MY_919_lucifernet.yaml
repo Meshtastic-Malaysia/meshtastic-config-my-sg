@@ -1,0 +1,21 @@
+# start of Meshtastic configure yaml
+# Usage: meshtastic [-t tcp_node_ip/hostname] [-s com_port/tty_device] --configure MY_919_lucifernet.yaml
+channel_url: https://meshtastic.org/e/#CgsSAQEoATABOgIIIBIRCAE4EUADSAFQG1gQaAHIBgE # LongFast with precise (32-bit) position
+config:
+  device:
+    tzdef: <+08>-8
+  lora:
+    channelNum: 16 # 922.875 MHz
+    configOkToMqtt: true
+    region: MY_919
+module_config:
+  mqtt:
+    address: mqtt.lucifernet.com
+    enabled: true
+    encryptionEnabled: true
+    mapReportSettings:
+      positionPrecision: 32
+    mapReportingEnabled: true
+    password: large4cats
+    root: msh/MY_919
+    username: meshdev
