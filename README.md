@@ -42,5 +42,5 @@ Only 1 channel (channelNum 0/id 0) is defined, with the following settings:
 | positionPrecision | 32 | 32 | |
 | mapReportingEnabled | true | true | |
 | password | large4cats | large4cats | |
-| root | msh/SG_923 | msh/MY_919 | |
+| root | msh/MY_919 | msh/SG_923 | |
 | username | meshdev | meshdev | |
