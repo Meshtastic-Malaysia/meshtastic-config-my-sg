@@ -1,0 +1,13 @@
+# start of Meshtastic configure yaml
+# Usage: meshtastic [-t tcp_node_ip/hostname] [-s com_port/tty_device] --configure SG_923_lucifernet.yaml
+channel_url: https://meshtastic.org/e/#CgsSAQEoATABOgIIIBIRCAE4EkADSAFQFFgEaAHIBgE # LongFast with precise (32-bit) position
+config:
+  device:
+    tzdef: <+08>-8
+  lora:
+    channelNum: 4 # 917.875 MHz
+    configOkToMqtt: false
+    region: SG_923
+module_config:
+  mqtt:
+    enabled: false

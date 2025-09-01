@@ -9,8 +9,13 @@ These are YAML files for quick/mass deployment of LongFast-only (public, unencry
 
 ## Usage
 
-* **MY_919**: `meshtastic [-t tcp_node_ip/hostname] [-s com_port/tty_device] --configure MY_919_lucifernet.yaml`
-* **SG_923**: `meshtastic [-t tcp_node_ip/hostname] [-s com_port/tty_device] --configure SG_923_lucifernet.yaml`
+* **MY_919**: `meshtastic [-t tcp_node_ip/hostname] [-s com_port/tty_device] --configure MY_919_lucifernet_MQTT.yaml`
+* **SG_923**: `meshtastic [-t tcp_node_ip/hostname] [-s com_port/tty_device] --configure SG_923_lucifernet_MQTT.yaml`
+
+### RF-only (no MQTT)
+
+* **MY_919**: `meshtastic [-t tcp_node_ip/hostname] [-s com_port/tty_device] --configure MY_919_lucifernet_RF.yaml`
+* **SG_923**: `meshtastic [-t tcp_node_ip/hostname] [-s com_port/tty_device] --configure SG_923_lucifernet_RF.yaml`
 
 ## Channels
 
@@ -25,6 +30,8 @@ Only 1 channel (channelNum 0/id 0) is defined, with the following settings:
 
 ## LoRa Settings
 
+(…_RF.yaml - OK to MQTT disabled)
+
 | Key | Malaysia | Singapore | Notes |
 | - | - | - | - |
 | region | MY_919 | SG_923 | |
@@ -33,6 +40,8 @@ Only 1 channel (channelNum 0/id 0) is defined, with the following settings:
 | _Other settings_ | _Default LongFast_ | _Default LongFast_ | |
 
 ## MQTT Module Settings
+
+(…_RF.yaml - MQTT module disabled)
 
 | Key | Malaysia | Singapore | Notes |
 | - | - | - | - |
