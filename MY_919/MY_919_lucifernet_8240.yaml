@@ -1,0 +1,48 @@
+# start of Meshtastic configure yaml
+# Usage: meshtastic [-t tcp_node_ip/hostname] [-s com_port/tty_device] --configure MY_919_lucifernet.yaml
+channel_url: https://meshtastic.org/e/#CgsSAQEoATABOgIIIBIRCAE4EUADSAFQG1gQaAHIBgE # LongFast with precise (32-bit) position
+config:
+  device:
+    nodeInfoBroadcastSecs: 0 # Reset to default
+    rebroadcastMode: ALL
+    tzdef: <+08>-8
+  lora:
+    channelNum: 0 # Reset to default
+    configOkToMqtt: true
+    hopLimit: 0 # Reset to default
+    region: MY_919
+    sx126xRxBoostedGain: true
+    txEnabled: true
+    txPower: 0 # Reset to default
+    usePreset: true
+  position:
+    fixedPosition: true
+    gpsMode: NOT_PRESENT
+    positionBroadcastSecs: 0 # Reset to default
+    positionBroadcastSmartEnabled: false
+    positionFlags: 3
+  security:
+    adminKey:
+    - base64:dcQlagPKqnVAS3qLWyShQjr0zR/iZSdmhdsPS0tmx3E= # 9V1BJ bbef
+location:
+  alt: 80
+  lat: 3.101269
+  lon: 101.679923
+module_config:
+  mqtt:
+    address: mqtt.lucifernet.com
+    enabled: true
+    encryptionEnabled: true
+    mapReportSettings:
+      positionPrecision: 32
+    mapReportingEnabled: true
+    password: large4cats
+    root: msh/MY_919
+    username: meshdev
+  neighborInfo:
+    enabled: true
+    transmitOverLora: true
+    updateInterval: 0 # Reset to default
+  storeForward:
+    enabled: true
+    isServer: true
