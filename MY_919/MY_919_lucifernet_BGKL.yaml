@@ -25,6 +25,8 @@ config:
     positionBroadcastSecs: 0 # Reset to default
     positionBroadcastSmartEnabled: false
     positionFlags: 3
+  power:
+    adcMultiplierOverride: 3.32
   security:
     adminKey:
     - base64:dcQlagPKqnVAS3qLWyShQjr0zR/iZSdmhdsPS0tmx3E= # 9V1BJ bbef
@@ -40,5 +42,5 @@ module_config:
   telemetry:
     deviceUpdateInterval: 0 # Reset to default
     environmentMeasurementEnabled: true
-owner: Bukit Gasing KL MY_919
+owner: Bukit Gasing KL/PJ MY_919
 owner_short: BGKL

@@ -25,6 +25,8 @@ config:
     positionBroadcastSecs: 0 # Reset to default
     positionBroadcastSmartEnabled: false
     positionFlags: 3
+  power:
+    adcMultiplierOverride: 3.32
   security:
     adminKey:
     - base64:dcQlagPKqnVAS3qLWyShQjr0zR/iZSdmhdsPS0tmx3E= # 9V1BJ bbef
