@@ -3,11 +3,18 @@
 channel_url: https://meshtastic.org/e/#CgsSAQEoATABOgIIIBIRCAE4EUADSAFQG1gQaAHIBgE # LongFast with precise (32-bit) position
 config:
   device:
+    nodeInfoBroadcastSecs: 0 # Reset to default
+    rebroadcastMode: ALL
     tzdef: <+08>-8
   lora:
-    channelNum: 16 # 922.875 MHz
+    channelNum: 0 # Reset to default
     configOkToMqtt: true
+    hopLimit: 0 # Reset to default
     region: MY_919
+    sx126xRxBoostedGain: true
+    txEnabled: true
+    txPower: 0 # Reset to default
+    usePreset: true
 module_config:
   mqtt:
     address: mqtt.lucifernet.com
@@ -19,3 +26,7 @@ module_config:
     password: large4cats
     root: msh/MY_919
     username: meshdev
+  neighborInfo:
+    enabled: true
+    transmitOverLora: true
+    updateInterval: 0 # Reset to default
