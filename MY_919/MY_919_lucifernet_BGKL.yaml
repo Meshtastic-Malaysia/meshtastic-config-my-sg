@@ -1,0 +1,43 @@
+# start of Meshtastic configure yaml
+# Usage: meshtastic [-t tcp_node_ip/hostname] [-s com_port/tty_device] --configure MY_919_lucifernet.yaml
+channel_url: https://meshtastic.org/e/#CgsSAQEoATABOgIIIBIRCAE4EUADSAFQG1gQaAHIBgE # LongFast with precise (32-bit) position
+config:
+  bluetooth:
+    enabled: false
+  device:
+    ledHeartbeatDisabled: true
+    nodeInfoBroadcastSecs: 0 # Reset to default
+    role: ROUTER
+    tzdef: <+08>-8
+  lora:
+    channelNum: 0 # Reset to default
+    configOkToMqtt: true
+    hopLimit: 0 # Reset to default
+    region: MY_919
+    sx126xRxBoostedGain: true
+    txEnabled: true
+    txPower: 0 # Reset to default
+    usePreset: true
+  position:
+    fixedPosition: true
+    gpsMode: NOT_PRESENT
+    positionBroadcastSecs: 0 # Reset to default
+    positionBroadcastSmartEnabled: false
+    positionFlags: 3
+  security:
+    adminKey:
+    - base64:dcQlagPKqnVAS3qLWyShQjr0zR/iZSdmhdsPS0tmx3E= # 9V1BJ bbef
+location:
+  alt: 155
+  lat: 3.0917
+  lon: 101.6585
+module_config:
+  neighborInfo:
+    enabled: true
+    transmitOverLora: true
+    updateInterval: 0 # Reset to default
+  telemetry:
+    deviceUpdateInterval: 0 # Reset to default
+    environmentMeasurementEnabled: true
+owner: Bukit Gasing KL MY_919
+owner_short: BGKL
