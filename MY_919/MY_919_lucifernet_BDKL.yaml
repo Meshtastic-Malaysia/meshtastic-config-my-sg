@@ -28,7 +28,6 @@ config:
   security:
     adminKey:
     - base64:dcQlagPKqnVAS3qLWyShQjr0zR/iZSdmhdsPS0tmx3E= # 9V1BJ bbef
-    serialEnabled: false
 location:
   alt: 280
   lat: 3.1903
