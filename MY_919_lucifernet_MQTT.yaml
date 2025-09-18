@@ -4,7 +4,6 @@ channel_url: https://meshtastic.org/e/#CgsSAQEoATABOgIIIBIRCAE4EUADSAFQG1gQaAHIB
 config:
   device:
     nodeInfoBroadcastSecs: 0 # Reset to default
-    rebroadcastMode: ALL
     tzdef: <+08>-8
   lora:
     channelNum: 0 # Reset to default
