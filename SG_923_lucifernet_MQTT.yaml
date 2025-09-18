@@ -23,6 +23,7 @@ module_config:
       positionPrecision: 32
     mapReportingEnabled: true
     password: large4cats
+    proxyToClientEnabled: true
     root: msh/SG_923
     username: meshdev
   neighborInfo:
