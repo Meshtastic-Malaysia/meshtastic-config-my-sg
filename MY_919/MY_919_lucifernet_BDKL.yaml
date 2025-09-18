@@ -30,6 +30,7 @@ config:
   security:
     adminKey:
     - base64:dcQlagPKqnVAS3qLWyShQjr0zR/iZSdmhdsPS0tmx3E= # 9V1BJ bbef
+    - base64:etJ5+QNCg9fWCa1ZzVW/HUVn3wV2sc07v+5I0KQihy0= # 9V1BJ 8240
 location:
   alt: 280
   lat: 3.1903
