@@ -8,7 +8,7 @@ config:
     ledHeartbeatDisabled: true
     nodeInfoBroadcastSecs: 0 # Reset to default
     rebroadcastMode: ALL
-    role: ROUTER
+    role: ROUTER_LATE
     tzdef: <+08>-8
   lora:
     channelNum: 0 # Reset to default
