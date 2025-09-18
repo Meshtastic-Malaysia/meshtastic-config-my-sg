@@ -1,6 +1,6 @@
 # start of Meshtastic configure yaml
 # Usage: meshtastic [-t tcp_node_ip/hostname] [-s com_port/tty_device] --configure MY_919_lucifernet.yaml
-channel_url: https://meshtastic.org/e/#CgsSAQEoATABOgIIIBIRCAE4EUADSAFQG1gQaAHIBgE # LongFast with precise (32-bit) position
+channel_url: https://meshtastic.org/e/#CgsSAQEoATABOgIIIBINCAE4EUgBUH9oAcgGAQ # LongFast with precise (32-bit) position
 config:
   bluetooth:
     enabled: false
