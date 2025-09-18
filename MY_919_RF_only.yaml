@@ -6,7 +6,7 @@ config:
     nodeInfoBroadcastSecs: 0 # Reset to default
     tzdef: <+08>-8
   lora:
-    channelNum: 0 # Reset to default
+    channelNum: 16 # 922.875 MHz
     configOkToMqtt: false
     hopLimit: 0 # Reset to default
     region: MY_919
