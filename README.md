@@ -13,22 +13,22 @@ These are YAML files for quick/mass deployment of LongFast-only (public, unencry
 
 Use these if you are frequently within mesh coverage.
 
-* **MY_919**: `meshtastic [-t tcp_node_ip/hostname] [-s com_port/tty_device] --configure MY_919.yaml`
-* **SG_923**: `meshtastic [-t tcp_node_ip/hostname] [-s com_port/tty_device] --configure SG_923.yaml`
+* **MY_919**: `meshtastic --configure MY_919.yaml [-t tcp_node_ip/hostname] [-s com_port/tty_device]`
+* **SG_923**: `meshtastic --configure SG_923.yaml [-t tcp_node_ip/hostname] [-s com_port/tty_device]`
 
 ### MQTT Gateway/Client Proxy
 
 Use these if you are frequently outside of mesh coverage, and your node is connected to Wi-Fi or a phone client app with cellular data.
 
-* **MY_919**: `meshtastic [-t tcp_node_ip/hostname] [-s com_port/tty_device] --configure MY_919_lucifernet_MQTT.yaml`
-* **SG_923**: `meshtastic [-t tcp_node_ip/hostname] [-s com_port/tty_device] --configure SG_923_lucifernet_MQTT.yaml`
+* **MY_919**: `meshtastic --configure MY_919_lucifernet_MQTT.yaml [-t tcp_node_ip/hostname] [-s com_port/tty_device]`
+* **SG_923**: `meshtastic --configure SG_923_lucifernet_MQTT.yaml [-t tcp_node_ip/hostname] [-s com_port/tty_device]`
 
 ### RF-only
 
 Use these if you do not want your transmissions uplinked by MQTT gateways. Note that your communications will be isolated to nodes within RF range only, limited by your configured hop limit (default: 3).
 
-* **MY_919**: `meshtastic [-t tcp_node_ip/hostname] [-s com_port/tty_device] --configure MY_919_RF_only.yaml`
-* **SG_923**: `meshtastic [-t tcp_node_ip/hostname] [-s com_port/tty_device] --configure SG_923_RF_only.yaml`
+* **MY_919**: `meshtastic --configure MY_919_RF_only.yaml [-t tcp_node_ip/hostname] [-s com_port/tty_device]`
+* **SG_923**: `meshtastic --configure SG_923_RF_only.yaml [-t tcp_node_ip/hostname] [-s com_port/tty_device]`
 
 ## Channels
 
