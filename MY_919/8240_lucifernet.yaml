@@ -9,7 +9,7 @@ config:
   lora:
     channelNum: 0 # Reset to default
     configOkToMqtt: true
-    hopLimit: 0 # Reset to default
+    hopLimit: 3 # Reset to default
     region: MY_919
     sx126xRxBoostedGain: true
     txEnabled: true
