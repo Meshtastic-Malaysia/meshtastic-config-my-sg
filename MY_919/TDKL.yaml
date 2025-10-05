@@ -47,3 +47,5 @@ module_config:
   storeForward:
     enabled: true
     isServer: true
+owner: 9V1BJ Taman Desa KL MY_919
+owner_short: TDKL
