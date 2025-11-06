@@ -1,0 +1,43 @@
+# start of Meshtastic configure yaml
+# Usage: meshtastic [-t tcp_node_ip/hostname] [-s com_port/tty_device] --configure MY_919_lucifernet.yaml
+channel_url: https://meshtastic.org/e/#CgsSAQEoATABOgIIIBINCAE4EUgBUH9oAcgGAQ # LongFast with precise (32-bit) position
+config:
+  bluetooth:
+    enabled: false
+  device:
+    ledHeartbeatDisabled: true
+    nodeInfoBroadcastSecs: 0 # Reset to default
+    rebroadcastMode: LOCAL_ONLY
+    role: CLIENT
+    tzdef: <+08>-8
+  lora:
+    channelNum: 0 # Reset to default
+    configOkToMqtt: true
+    hopLimit: 3 # Reset to default
+    region: MY_919
+    sx126xRxBoostedGain: true
+    txEnabled: true
+    txPower: 0 # Reset to default
+    usePreset: true
+  position:
+    gpsMode: ENABLED
+    positionBroadcastSecs: 0 # Reset to default
+    positionBroadcastSmartEnabled: false
+    positionFlags: 3
+  power:
+    adcMultiplierOverride: 3.325
+  security:
+    adminKey:
+    - base64:dcQlagPKqnVAS3qLWyShQjr0zR/iZSdmhdsPS0tmx3E= # 9V1BJ bbef
+    - base64:etJ5+QNCg9fWCa1ZzVW/HUVn3wV2sc07v+5I0KQihy0= # 9V1BJ 8240
+module_config:
+  neighborInfo:
+    enabled: true
+    transmitOverLora: true
+    updateInterval: 0 # Reset to default
+  telemetry:
+    deviceUpdateInterval: 5400
+    environmentMeasurementEnabled: true
+    environmentUpdateInterval: 2700
+owner: Seeed Solar Node P1 13ee
+owner_short: 13ee
