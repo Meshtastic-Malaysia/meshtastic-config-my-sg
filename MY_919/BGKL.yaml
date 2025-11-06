@@ -41,7 +41,8 @@ module_config:
     transmitOverLora: true
     updateInterval: 0 # Reset to default
   telemetry:
-    deviceUpdateInterval: 0 # Reset to default
+    deviceUpdateInterval: 5400
     environmentMeasurementEnabled: true
+    environmentUpdateInterval: 2700
 owner: Bukit Gasing KL/PJ MY_919
 owner_short: BGKL
