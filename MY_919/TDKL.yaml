@@ -2,14 +2,20 @@
 # Usage: meshtastic [-t tcp_node_ip/hostname] [-s com_port/tty_device] --configure MY_919_lucifernet.yaml
 channel_url: https://meshtastic.org/e/#CgsSAQEoATABOgIIIBINCAE4EUgBUH9oAcgGAQ # LongFast with precise (32-bit) position
 config:
+  bluetooth:
+    enabled: false
   device:
+    ledHeartbeatDisabled: true
     nodeInfoBroadcastSecs: 0 # Reset to default
     rebroadcastMode: ALL
     tzdef: <+08>-8
+  display:
+    autoScreenCarouselSecs: 3
   lora:
     channelNum: 0 # Reset to default
     configOkToMqtt: true
     hopLimit: 3 # Reset to default
+    modemPreset: MEDIUM_FAST
     region: MY_919
     sx126xRxBoostedGain: true
     txEnabled: true
@@ -20,7 +26,7 @@ config:
     gpsMode: NOT_PRESENT
     positionBroadcastSecs: 0 # Reset to default
     positionBroadcastSmartEnabled: false
-    positionFlags: 3
+    positionFlags: 131
   security:
     adminKey:
     - base64:dcQlagPKqnVAS3qLWyShQjr0zR/iZSdmhdsPS0tmx3E= # 9V1BJ bbef
@@ -44,8 +50,8 @@ module_config:
     enabled: true
     transmitOverLora: true
     updateInterval: 0 # Reset to default
-  storeForward:
-    enabled: true
-    isServer: true
-owner: 9V1BJ Taman Desa KL MY_919
+  telemetry:
+    deviceTelemetryEnabled: true
+    deviceUpdateInterval: 5400
+owner: Taman Desa KL MY_919 9V1BJ
 owner_short: TDKL

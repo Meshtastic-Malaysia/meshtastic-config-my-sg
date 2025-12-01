@@ -14,6 +14,7 @@ config:
     channelNum: 0 # Reset to default
     configOkToMqtt: true
     hopLimit: 3 # Reset to default
+    modemPreset: MEDIUM_FAST
     region: MY_919
     sx126xRxBoostedGain: true
     txEnabled: true
@@ -29,8 +30,9 @@ config:
     adcMultiplierOverride: 3.325
   security:
     adminKey:
-    - base64:dcQlagPKqnVAS3qLWyShQjr0zR/iZSdmhdsPS0tmx3E= # 9V1BJ bbef
-    - base64:etJ5+QNCg9fWCa1ZzVW/HUVn3wV2sc07v+5I0KQihy0= # 9V1BJ 8240
+    - base64:dcQlagPKqnVAS3qLWyShQjr0zR/iZSdmhdsPS0tmx3E= # 9V1BJ MY_919
+    - base64:cZTDTbFpSVHDQI5T20V0b4KthSLXG865drDX4fM3REU= # 9W2VHF MY_919
+    - base64:7kuH4GnbIu5tIoASJdSBLHZG5dFr/7jYnZJWtMfhYHw= # 9W2RUT MY_919
 location:
   alt: 155
   lat: 3.0917
@@ -41,6 +43,7 @@ module_config:
     transmitOverLora: true
     updateInterval: 0 # Reset to default
   telemetry:
+    deviceTelemetryEnabled: true
     deviceUpdateInterval: 5400
     environmentMeasurementEnabled: true
     environmentUpdateInterval: 2700

@@ -14,6 +14,7 @@ config:
     channelNum: 0 # Reset to default
     configOkToMqtt: true
     hopLimit: 3 # Reset to default
+    modemPreset: MEDIUM_FAST
     region: MY_919
     sx126xRxBoostedGain: true
     txEnabled: true
