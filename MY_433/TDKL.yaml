@@ -1,0 +1,57 @@
+# start of Meshtastic configure yaml
+# Usage: meshtastic [-t tcp_node_ip/hostname] [-s com_port/tty_device] --configure MY_919_lucifernet.yaml
+channel_url: https://meshtastic.org/e/#CgsSAQEoATABOgIIIBIYCAEQBBj6ASALKAU4EEADSAFQf2gByAYB # Default with precise (32-bit) position
+config:
+  bluetooth:
+    enabled: true
+  device:
+    ledHeartbeatDisabled: true
+    nodeInfoBroadcastSecs: 0 # Reset to default
+    rebroadcastMode: ALL
+    tzdef: <+08>-8
+  display:
+    autoScreenCarouselSecs: 3
+  lora:
+    channelNum: 0 # Reset to default
+    configOkToMqtt: true
+    hopLimit: 3 # Reset to default
+    modemPreset: MEDIUM_FAST
+    region: MY_433
+    sx126xRxBoostedGain: true
+    txEnabled: true
+    txPower: 0 # Reset to default
+    usePreset: true
+  position:
+    fixedPosition: true
+    gpsMode: NOT_PRESENT
+    positionBroadcastSecs: 0 # Reset to default
+    positionBroadcastSmartEnabled: false
+    positionFlags: 131
+  security:
+    adminKey:
+    - base64:dcQlagPKqnVAS3qLWyShQjr0zR/iZSdmhdsPS0tmx3E= # 9V1BJ bbef
+location:
+  alt: 80
+  lat: 3.101269
+  lon: 101.679923
+module_config:
+  mqtt:
+    address: mqtt.lucifernet.com
+    enabled: true
+    encryptionEnabled: true
+    mapReportSettings:
+      positionPrecision: 32
+    mapReportingEnabled: true
+    password: large4cats
+    proxyToClientEnabled: false
+    root: msh/MY_433
+    username: meshdev
+  neighborInfo:
+    enabled: true
+    transmitOverLora: true
+    updateInterval: 0 # Reset to default
+  telemetry:
+    deviceTelemetryEnabled: true
+    deviceUpdateInterval: 5400
+owner: Taman Desa KL MY_433 9V1BJ
+owner_short: TDKL

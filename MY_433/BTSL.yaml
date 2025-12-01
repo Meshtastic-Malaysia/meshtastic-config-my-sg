@@ -1,0 +1,48 @@
+# start of Meshtastic configure yaml
+# Usage: meshtastic [-t tcp_node_ip/hostname] [-s com_port/tty_device] --configure MY_919_lucifernet.yaml
+channel_url: https://meshtastic.org/e/#CgsSAQEoATABOgIIIBIYCAEQBBj6ASALKAU4EEADSAFQf2gByAYB # Default with precise (32-bit) position
+config:
+  bluetooth:
+    enabled: false
+  device:
+    ledHeartbeatDisabled: true
+    nodeInfoBroadcastSecs: 0 # Reset to default
+    rebroadcastMode: LOCAL_ONLY
+    role: ROUTER
+    tzdef: <+08>-8
+  lora:
+    channelNum: 0 # Reset to default
+    configOkToMqtt: true
+    hopLimit: 3 # Reset to default
+    region: MY_433
+    sx126xRxBoostedGain: true
+    txEnabled: true
+    txPower: 0 # Reset to default
+    usePreset: true
+  position:
+    fixedPosition: true
+    gpsMode: NOT_PRESENT
+    positionBroadcastSecs: 0 # Reset to default
+    positionBroadcastSmartEnabled: false
+    positionFlags: 131
+  security:
+    adminKey:
+    - base64:dcQlagPKqnVAS3qLWyShQjr0zR/iZSdmhdsPS0tmx3E= # 9V1BJ MY_919
+    - base64:Tj4HSkNDiIX2VsqcVgDijk90ai7KMYtB7IwsbsfAdVA= # 9W2VHF MY_433
+    - base64:7kuH4GnbIu5tIoASJdSBLHZG5dFr/7jYnZJWtMfhYHw= # 9W2RUT MY_919
+location:
+  alt: 157
+  lat: 3.253122
+  lon: 101.545107
+module_config:
+  neighborInfo:
+    enabled: true
+    transmitOverLora: true
+    updateInterval: 0 # Reset to default
+  telemetry:
+    deviceTelemetryEnabled: true
+    deviceUpdateInterval: 5400
+    environmentMeasurementEnabled: true
+    environmentUpdateInterval: 2700
+owner: Bukit Tadun Selangor MY_433
+owner_short: BTSL
