@@ -1,14 +1,15 @@
 # start of Meshtastic configure yaml
 # Usage: meshtastic [-t tcp_node_ip/hostname] [-s com_port/tty_device] --configure MY_919_lucifernet.yaml
-channel_url: https://meshtastic.org/e/#CgsSAQEoATABOgIIIBINCAE4EUgBUH9oAcgGAQ # LongFast with precise (32-bit) position
+channel_url: https://meshtastic.org/e/#CgsSAQEoATABOgIIIBINCAEQBDgRSAFoAcgGAQ # MediumFast with precise (32-bit) position
 config:
   device:
     nodeInfoBroadcastSecs: 0 # Reset to default
     tzdef: <+08>-8
   lora:
-    channelNum: 16 # 922.875 MHz
+    channelNum: 0 # Reset to default
     configOkToMqtt: true
     hopLimit: 3 # Reset to default
+    modemPreset: MEDIUM_FAST
     region: MY_919
     sx126xRxBoostedGain: true
     txEnabled: true
